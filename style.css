@@ -1,0 +1,37 @@
+:root {
+  --blau: #1565c0;
+  --blau-dunkel: #0d47a1;
+  --hellblau: #e3f2fd;
+  --text: #1c2a3a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--hellblau); color: var(--text); line-height: 1.55; }
+header { background: linear-gradient(135deg, #42a5f5, var(--blau-dunkel)); color: white; text-align: center; padding: 20px 16px 16px; }
+header .route { font-size: 0.85em; letter-spacing: 1px; text-transform: uppercase; opacity: 0.9; }
+header h1 { margin: 6px 0 0; font-size: 1.5em; }
+.dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+.dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); }
+.dots span.aktiv { background: white; }
+main { max-width: 600px; margin: 0 auto; padding: 16px; }
+.foto { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 14px; box-shadow: 0 4px 12px rgba(13,71,161,0.2); display: block; }
+.platzhalter { display: flex; align-items: center; justify-content: center; background: #bbdefb; color: var(--blau-dunkel); font-size: 1.1em; }
+.chips { display: flex; gap: 10px; margin-top: 16px; }
+.chip { flex: 1; background: white; border-radius: 14px; padding: 10px; text-align: center; box-shadow: 0 2px 8px rgba(13,71,161,0.1); }
+.chip small { display: block; color: #5c7a99; font-size: 0.75em; text-transform: uppercase; }
+.chip strong { color: var(--blau-dunkel); }
+.karte { background: white; border-radius: 14px; padding: 14px 16px; margin-top: 16px; box-shadow: 0 2px 8px rgba(13,71,161,0.1); }
+.karte h2 { margin: 0 0 6px; font-size: 1.05em; color: var(--blau-dunkel); }
+.karte p { margin: 0; }
+.karte.nachhaltig { border-left: 5px solid #29b6f6; }
+.kartenbild { aspect-ratio: 16 / 10; border-radius: 10px; margin-top: 8px; }
+.navigation { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding-bottom: 24px; }
+.zurueck { color: var(--blau-dunkel); text-decoration: none; padding: 12px 4px; }
+.weiter { background: var(--blau); color: white; text-decoration: none; padding: 14px 26px; border-radius: 30px; font-weight: 600; box-shadow: 0 3px 8px rgba(21,101,192,0.4); }
+.karte.zielgruppe { border-left: 5px solid var(--blau); }
+.zusatz { background: linear-gradient(135deg, #1976d2, var(--blau-dunkel)); color: white; border-radius: 14px; padding: 16px; margin-top: 16px; box-shadow: 0 4px 12px rgba(13,71,161,0.3); }
+.zusatz h2 { margin: 0 0 8px; font-size: 1.05em; }
+.zusatz .frage { background: rgba(255,255,255,0.15); border-radius: 10px; padding: 10px 12px; }
+.zusatz details { margin-top: 10px; }
+.zusatz summary { cursor: pointer; font-weight: 600; background: white; color: var(--blau-dunkel); border-radius: 20px; padding: 8px 16px; display: inline-block; list-style: none; }
+.zusatz summary::-webkit-details-marker { display: none; }
+.zusatz details p { margin: 10px 0 0; background: rgba(255,255,255,0.15); border-radius: 10px; padding: 10px 12px; }
